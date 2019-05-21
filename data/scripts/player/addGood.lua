@@ -1,7 +1,7 @@
 if onServer() then
 package.path = package.path .. ";data/scripts/lib/?.lua"
-require ("utility")
-require ("goods")
+include ("utility")
+include ("goods")
 
 function initialize()
     local goodName = Player(sender):getValue("goodName")
