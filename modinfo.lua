@@ -4,24 +4,24 @@ meta =
     -- ID of your mod; Make sure this is unique!
     -- Will be used for identifying the mod in dependency lists
     -- Will be changed to workshop ID (ensuring uniqueness) when you upload the mod to the workshop
-    id = "1691539727",
+    id = "mdh",
 
     -- Name of your mod; You may want this to be unique, but it's not absolutely necessary.
     -- This is an additional helper attribute for you to easily identify your mod in the Mods() list
-    name = "mos",
+    name = "modDevHelper",
 
     -- Title of your mod that will be displayed to players
-    title = "Laserzwei's Move Asteroids",
+    title = "Laserzwei's Mod Developement Helper",
 
     -- Description of your mod that will be displayed to players
-    description = "This mod allows you to move asteroids across sectors.",
+    description = "This mod adds some tools making mod developement easier.",
 
     -- Insert all authors into this list
     authors = {"Laserzwei"},
 
     -- Version of your mod, should be in format 1.0.0 (major.minor.patch) or 1.0 (major.minor)
     -- This will be used to check for unmet dependencies or incompatibilities
-    version = "0.22.0",
+    version = "0.1.0",
 
     -- If your mod requires dependencies, enter them here. The game will check that all dependencies given here are met.
     -- Possible attributes:
@@ -40,7 +40,6 @@ meta =
     -- },
     dependencies = {
         {id = "Avorion", min = "0.23"},
-        {id = "1691591293", min = "1.0"}  -- claimhook mod
     },
 
     -- Set to true if the mod only has to run on the server. Clients will get notified that the mod is running on the server, but they won't download it to themselves
