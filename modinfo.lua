@@ -8,20 +8,20 @@ meta =
 
     -- Name of your mod; You may want this to be unique, but it's not absolutely necessary.
     -- This is an additional helper attribute for you to easily identify your mod in the Mods() list
-    name = "modDevHelper",
+    name = "admin-toolbox",
 
     -- Title of your mod that will be displayed to players
-    title = "Laserzwei's Mod Developement Helper",
+    title = "Laserzwei's Admin Toolbox",
 
     -- Description of your mod that will be displayed to players
-    description = "This mod adds some tools making mod developement easier.",
+    description = "This mod adds some tools making Administrative tasks easier.",
 
     -- Insert all authors into this list
     authors = {"Laserzwei"},
 
     -- Version of your mod, should be in format 1.0.0 (major.minor.patch) or 1.0 (major.minor)
     -- This will be used to check for unmet dependencies or incompatibilities
-    version = "0.1.0",
+    version = "0.1.1",
 
     -- If your mod requires dependencies, enter them here. The game will check that all dependencies given here are met.
     -- Possible attributes:
