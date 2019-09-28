@@ -86,19 +86,20 @@ end
 
 function sendPlayers()
     local players = {Server():getOnlinePlayers()} or {}
-    local indices = {}
+    local indices, namedIndex = {}, {}
     for _, player in pairs(players) do
         table.insert(indices, player.index)
+        namedIndex[player.index] = player.name
     end
-    invokeClientFunction(Player(callingPlayer), "receivePlayers", indices)
+    invokeClientFunction(Player(callingPlayer), "receivePlayers", indices, namedIndex)
 end
 callable(nil, "sendPlayers")
 
-function receivePlayers(indices)
+function receivePlayers(indices, namedIndex)
     playerSelectionCombo:clear()
     playerSelectionCombo:addEntry(nil, "-Select Player-")
-    for _,playerIndex in ipairs(indices) do
-        playerSelectionCombo:addEntry(playerIndex, Player(playerIndex).name)
+    for k,playerIndex in ipairs(indices) do
+        playerSelectionCombo:addEntry(playerIndex, namedIndex[playerIndex])
     end
 end
 
