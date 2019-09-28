@@ -18,6 +18,7 @@ local uiInitialized
 local selectedLeftPlayer
 
 function initialize()
+    terminate()
     if onClient()then
         InteractionText().text = Dialog.generateStationInteractionText(Entity(), random())
     end
