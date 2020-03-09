@@ -25,7 +25,7 @@ function initialize()
 end
 
 function interactionPossible(playerIndex, option)
-    return true --Server():hasAdminPrivileges(Player(playerIndex))
+    return Player().index == playerIndex
 end
 
 function initUI()

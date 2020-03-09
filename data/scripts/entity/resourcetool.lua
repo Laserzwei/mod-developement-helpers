@@ -21,18 +21,12 @@ local selectedPlayer
 local lines = {}
 local elementToData = {}
 
---UI
-local window
-local playerSelectionCombo
-
-local uiInitialized
-
 function initialize()
 
 end
 
 function interactionPossible(playerIndex, option)
-    return true --Server():hasAdminPrivileges(Player(playerIndex))
+    return Player().index == playerIndex
 end
 
 function initUI()
