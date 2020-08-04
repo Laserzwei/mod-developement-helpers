@@ -9,7 +9,7 @@ function execute(sender, commandName, ...)
     end
     return 0, "", ""
 end
-
+ 
 function getDescription()
     return "A shorter way to get entitydbg"
 end
