@@ -13,6 +13,9 @@ meta =
     -- Title of your mod that will be displayed to players
     title = "Laserzwei's Admin Toolbox",
 
+    -- Type of your mod, either "mod" or "factionpack"
+    type = "mod",
+
     -- Description of your mod that will be displayed to players
     description = "This mod adds some tools making Administrative tasks easier.",
 
@@ -21,6 +24,8 @@ meta =
 
     -- Version of your mod, should be in format 1.0.0 (major.minor.patch) or 1.0 (major.minor)
     -- This will be used to check for unmet dependencies or incompatibilities
+    -- If a client with an unmatching major or minor mod version wants to log into a server, login is prohibited.
+    -- Unmatching patch version still allows logging into a server. This works in both ways (server or client higher or lower version).
     version = "0.1.2",
 
     -- If your mod requires dependencies, enter them here. The game will check that all dependencies given here are met.
@@ -39,7 +44,7 @@ meta =
     --      {id = "OptionalMod", min = "0.2", optional = true}, -- we support OptionalMod optionally, starting at version 0.2
     -- },
     dependencies = {
-        {id = "Avorion",  min = "0.23.*", max = "2.*"},
+        {id = "Avorion", min = "0.23.*", max = "2.*"},
     },
 
     -- Set to true if the mod only has to run on the server. Clients will get notified that the mod is running on the server, but they won't download it to themselves
